@@ -160,15 +160,9 @@ h3 {
   transition: background-color 0.25s;
 }
 
-/* .sign-up-small a {
-  font-size: 1rem;
-  border-radius: 5px;
-  background-color: #9D85DC;
-  text-decoration: none;
-  color: #fff;
-  padding: 10px;
-  transition: background-color 0.25s;
-} */
+.space-above {
+  margin-top: 2rem;
+}
 
 .sign-up a:hover, .sign-up-small a:hover {
   background-color: #5222D0;
