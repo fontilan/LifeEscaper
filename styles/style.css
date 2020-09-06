@@ -184,11 +184,13 @@ h3 {
 }
 
 .left {
+  margin-bottom: 5px;
   float: left;
   width: 25%;
 }
 
 .right {
+  margin-bottom: 5px;
   float: left;
   width: 75%;
 }
@@ -268,7 +270,7 @@ footer p i {
   color: #000;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
   .footer-wrap {
     flex-direction: column;
   }
