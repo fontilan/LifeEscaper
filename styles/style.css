@@ -10,7 +10,6 @@ html {
 body {
   background-color: #E8E8E8;
   font-family: 'Montserrat', sans-serif;
-  /* padding: 5px; */
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -231,7 +230,6 @@ input, textarea {
 }
 
 #form {
-  /* margin-bottom: 20rem; */
   background-color: #fff;
   padding: 0.5rem;
   border-radius: 3px;
@@ -300,16 +298,14 @@ footer p i {
   }
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the nav-bar (.icon) */
 @media screen and (max-width: 900px) {
-.nav-bar a:not(:first-child) {display: none;}
-.nav-bar a.icon {
-  float: right;
-  display: block;
-}
+  .nav-bar a:not(:first-child) {display: none;}
+  .nav-bar a.icon {
+    float: right;
+    display: block;
+  }
 }
 
-/* The "responsive" class is added to the nav-bar with JavaScript when the user clicks on the icon. This class makes the nav-bar look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 900px) {
   .nav-bar.responsive {
     position: fixed;
