@@ -1,0 +1,500 @@
+<!doctype html>
+
+<style>
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #E8E8E8;
+    font-family: 'Montserrat', sans-serif;
+    /* padding: 5px; */
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  #header-img {
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 800px;
+  }
+
+  .image {
+    display: block;
+    margin: 0 auto 1rem;
+    width: 95%;
+    max-width: 800px;
+    border-radius: 5px;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #EAA5A2;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+    text-align: right;
+  }
+
+  nav a {
+    display: inline-block;
+    padding: 10px 15px 12px 15px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #EAA5A2;
+    transition: background-color 0.25s;
+  }
+
+  nav a:hover {
+    background-color: #EC615B;
+  }
+
+  .nav-bar .icon {
+    display: none;
+  }
+
+  h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 5rem;
+    color: #5222D0;
+    text-shadow: 2px 2px 4px #9D85DC;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5rem;
+    color: #EC615B;
+    padding-top: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px #EAA5A2;
+  }
+
+  h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #9D85DC;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px #9D85DC;
+  }
+
+  .subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #9D85DC;
+  }
+
+  .small-sub {
+    font-size: 1rem;
+    color: #9D85DC;
+    margin-bottom: 4rem;
+  }
+
+  .section {
+    margin: 0 auto 100px;
+    max-width: 800px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 1rem 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .big-section-wrap {
+    background-color: #fff;
+    max-width: 1400px;
+    max-width: 100%;
+    margin: 0 auto 100px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 1.5rem 1.5rem 2.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .big-section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+  }
+
+  .one-of-three {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0.5rem 0.5rem 2rem 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .image-smaller {
+    display: block;
+    max-width: 50%;
+    height: 200px;
+    margin: 0 auto;
+    background-image: radial-gradient(#C3B7E2, #fff, #fff);
+  }
+
+  .sign-up {
+    margin-top: 2rem;
+  }
+
+  .sign-up a {
+    box-sizing: border-box;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    background-color: #9D85DC;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    transition: background-color 0.25s;
+  }
+
+  /* .sign-up-small a {
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #9D85DC;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    transition: background-color 0.25s;
+  } */
+
+  .sign-up a:hover, .sign-up-small a:hover {
+    background-color: #5222D0;
+  }
+
+  .description {
+    margin-bottom: 25px;
+  }
+
+  .flex {
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+
+  .flex-wrap:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .left {
+    float: left;
+    width: 25%;
+  }
+
+  .right {
+    float: left;
+    width: 75%;
+  }
+
+  .right-right {
+    float: right;
+  }
+
+  .label-gap {
+    margin-top: 20px;
+  }
+  .hidden {
+    display: none;
+  }
+
+  input, textarea {
+    box-sizing: border-box;
+    border: 2px solid #9D85DC;
+    border-radius: 5px;
+    padding: 5px;
+    resize: vertical;
+  }
+
+  #submit {
+    margin-top: 5px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #9D85DC;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    transition: background-color 0.25s;
+  }
+
+  #submit:hover {
+    background-color: #5222D0;
+  }
+
+  #form {
+    /* margin-bottom: 20rem; */
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 3px;
+  }
+
+  footer {
+    border-top: 1px solid #fff;
+    background-color: #E9D8D7;
+  }
+
+  .footer-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .footer-wrap a {
+    padding-top: 1rem;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .copyright {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 0.875rem;
+  }
+
+  footer p i {
+    padding-right: .25rem;
+    vertical-align: middle;
+    color: #000;
+  }
+
+  @media (max-width: 650px) {
+    .footer-wrap {
+      flex-direction: column;
+    }
+    label {
+      padding-top: 1rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .flex {
+      max-width: 100%;
+    }
+    .left, .right, #submit {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+
+  @media (max-width: 750px) {
+    .big-section {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 1rem;
+    }
+    .big-section-wrap {
+      padding: .5rem .5rem 1.5rem;
+    }
+  }
+
+ /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the nav-bar (.icon) */
+ @media screen and (max-width: 900px) {
+  .nav-bar a:not(:first-child) {display: none;}
+  .nav-bar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the nav-bar with JavaScript when the user clicks on the icon. This class makes the nav-bar look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 900px) {
+    .nav-bar.responsive {
+      position: fixed;
+    }
+    .nav-bar.responsive a.icon {
+      position: fixed;
+      right: 20px;
+      top: 20px;
+    }
+    .nav-bar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+</style>
+
+
+<script>
+
+function myFunction() {
+  var x = document.getElementById("nav-bar");
+  if (x.className === "nav-bar") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav-bar";
+  }
+}
+
+</script>
+
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/848bf7abdc.js" crossorigin="anonymous"></script>
+    <title>Life Escaper</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <img id="header-img" src="images/pixeltrue-jogging-1.svg">
+      <h1 class="center">Life Escaper</h1>
+      <p class="center subtitle">We can help you run away from your life</p>
+      <p class="center small-sub">(for a while, at least)</p>
+      <nav class="nav-bar" id="nav-bar">
+        <a class="hidden" href="#header-img">Home</a>
+        <a class="nav-link" href="#how">How it works</a>
+        <a class="nav-link" href="#offer">Our Camps</a>
+        <a class="nav-link" href="#yoga">Yoga Camp</a>
+        <a class="nav-link" href="#meditation">Meditation Camp</a>
+        <a class="nav-link" href="#music">Music Camp</a>
+        <a class="nav-link" href="#contact">Get in touch</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </header>
+    <section class="section">
+      <h2 class="center" id="how">How it works</h2>
+      <p class="description">Feeling overwhelmed? Life is getting crazy and hectic? You wish you could just
+        drop everything and focus on yourself for a change? Look no further! Our team will help you restore
+        your peace of mind and a sense of balance.</p>
+      <p>Our hand-crafted plans (“Camps”) are designed to bring peace
+        and serenity back into your life. Be it through yoga, meditation or music – after just a few days you will feel
+        energized and ready to tackle the world head on.</p>
+    </section>
+    <section class="big-section-wrap">
+      <h2 class="center" id="offer">Our Camps</h2>
+      <div class="big-section">
+        <div class="one-of-three">
+          <h3 class="center">Yoga Camp</h3>
+          <img class="image-smaller" src="images/bw-pixeltrue-yoga.svg">
+          <p>Our Yoga Camp is dedicated to physical restoration and bringing balance
+            into your life. No position will be alien to you after this course.</p>
+            <br>
+            <p class="center"><a href="#yoga">Learn more</a></p>
+        </div>
+        <div class="one-of-three">
+          <h3 class="center">Meditation Camp</h3>
+          <img class="image-smaller" src="images/bw-pixeltrue-meditation.svg">
+          <p>Our Meditation Camp is dedicated to spiritual wanderers, guiding them
+            towards peace and serenity under the guidance of the world most renowned gurus.</p>
+          <br>
+          <p class="center"><a href="#yoga">Learn more</a></p>
+        </div>
+        <div class="one-of-three">
+          <h3 class="center">Music Camp</h3>
+          <img class="image-smaller" src="images/bw-pixeltrue-learning.svg">
+          <p>Our Music Camp is dedicated to sound therapy, quietening the buzz
+            of the everyday rush, and surrounding our guests with warm and friendly tones of peace.</p>
+          <br>
+          <p class="center"><a class="center" href="#yoga">Learn more</a></p>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <h2 class="center" id="yoga">Yoga Camp</h2>
+      <img class="image" src="images/pixeltrue-yoga-1.svg">
+      <p class=>This ancient art of harmonious movement is the perfect way to reestablish harmony in your busy life.
+        With the help of our professional yogis you will develop strength and flexibility which you can then utilize in every situation.</p>
+      <br>
+      <p>For our beginners we offer introductory classes teaching you the proper techniques of breathing and movement to establish a strong
+        foundation for the more advanced techniques. No experience is necessary and there is no age restriction – yoga can be learned easily by anyone.</p>
+      <br>
+        For our more advanced users we offer more challenging sessions with some of the best yogis in the world. With their help you will achieve
+        mastery over your body and mind.</p>
+      <div class="sign-up center">
+        <a href="#contact">Sign me up!</a>
+      </div>
+    </section>
+    <section class="section">
+      <h2 class="center" id="meditation">Meditation Camp</h2>
+      <img class="image" src="images/pixeltrue-meditation-1.svg">
+      <p class=>The art of meditation is deceptively simple – it’s just sitting. Anyone who tried to do it
+        though will know that this simplicity is complicated by out mind’s tendency to wander. No worries! With the
+        help of our seasoned meditation masters you will learn to overcome your “monkey mind” and find peace and serenity.</p>
+      <br>
+      <p>For beginners we offer introductory classes which are shorter and more playful, teaching the basics of breath-work and concentration.</p>
+      <br>
+      <p>For more experienced meditators we offer deep focus sessions, lasting up to 4 hours, allowing the practitioner to reach the state of pure being.</p>
+      <div class="sign-up center">
+        <a href="#contact">Sounds amazing!</a>
+      </div>
+    </section>
+    <section class="section">
+      <h2 class="center" id="music">Music Camp</h2>
+      <img class="image" src="images/pixeltrue-learning-1.svg">
+      <p class=>Your heart is singing, yet you almost forgot its tune – it's time to return to the
+        wonderful music of your soul. With the help of our professional musicians, musicologist, and music
+        therapists you will rediscover the harmony that drives your life.</p>
+      <br>
+      <p>With a selection of the best hand-crafted instruments (guitars, drums, flutes, shakers,
+        saxophones etc.) you will discover the wonderful world of sound and learns its healing power.</p>
+      <br>
+      <p>And if you cannot play any instrument? Worry not! Not only will you be surrounded by professional musicians
+        who will help you pick up the basics in no time, but you can also engage in “free music” – a spontaneous
+        improvisation coming straight from your heart. There are no wrong notes there!</p>
+      <br>
+      <div class="sign-up center">
+        <a href="#contact">Take my money!</a>
+      </div>
+    </section>
+    <section class="section">
+      <h2 class="center" id="contact">Get in touch</h2>
+      <p>Send us a message and we will get back to you with a personalised plan perfect for you.</p>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <div class="flex">
+          <label class="left" for="name">Your name:</label>
+          <input class="right" type="text" id="name" name="name" placeholder="enter your name">
+          <br class="label-gap">
+          <label class="left" for="email">Your email:</label>
+          <input class="right" type="email" id="email" name="email" placeholder="enter your email">
+          <br class="label-gap">
+          <label class="left" for="message">Your message:</label>
+          <div class="flex-wrap">
+            <textarea class="right" placeholder="..." rows="5"></textarea>
+            <input class="right-right" type="submit" value="Send" id="submit">
+          </div>
+        </div>
+      </form>
+    </section>
+  </body>
+  <footer>
+    <div class="footer-wrap">
+      <a href="#contact">Terms of service</a>
+      <a href="#contact">Privacy policy</a>
+      <a href="#contact">Cookie policy</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="copyright"><i class="far fa-copyright fa-xs"></i>Wojciech Gmuzdek 2020</p>
+  </footer>
+</html>
