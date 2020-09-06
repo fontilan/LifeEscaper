@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #E8E8E8;
+  font-family: 'Montserrat', sans-serif;
+  /* padding: 5px; */
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#header-img {
+  display: block;
+  margin: 0 auto;
+  width: 95%;
+  max-width: 800px;
+}
+
+.image {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 95%;
+  max-width: 800px;
+  border-radius: 5px;
+}
+
+.center {
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #EAA5A2;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  text-align: right;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 15px 12px 15px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #EAA5A2;
+  transition: background-color 0.25s;
+}
+
+nav a:hover {
+  background-color: #EC615B;
+}
+
+.nav-bar .icon {
+  display: none;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 5rem;
+  color: #5222D0;
+  text-shadow: 2px 2px 4px #9D85DC;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3.5rem;
+  color: #EC615B;
+  padding-top: 4rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px #EAA5A2;
+}
+
+h3 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  color: #9D85DC;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px #9D85DC;
+}
+
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #9D85DC;
+}
+
+.small-sub {
+  font-size: 1rem;
+  color: #9D85DC;
+  margin-bottom: 4rem;
+}
+
+.section {
+  margin: 0 auto 100px;
+  max-width: 800px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 1rem 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.big-section-wrap {
+  background-color: #fff;
+  max-width: 1400px;
+  max-width: 100%;
+  margin: 0 auto 100px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 1.5rem 1.5rem 2.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.big-section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+}
+
+.one-of-three {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0.5rem 0.5rem 2rem 0.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image-smaller {
+  display: block;
+  max-width: 50%;
+  height: 200px;
+  margin: 0 auto;
+  background-image: radial-gradient(#C3B7E2, #fff, #fff);
+}
+
+.sign-up {
+  margin-top: 2rem;
+}
+
+.sign-up a {
+  box-sizing: border-box;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  background-color: #9D85DC;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  transition: background-color 0.25s;
+}
+
+/* .sign-up-small a {
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #9D85DC;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  transition: background-color 0.25s;
+} */
+
+.sign-up a:hover, .sign-up-small a:hover {
+  background-color: #5222D0;
+}
+
+.description {
+  margin-bottom: 25px;
+}
+
+.flex {
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.flex-wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left {
+  float: left;
+  width: 25%;
+}
+
+.right {
+  float: left;
+  width: 75%;
+}
+
+.right-right {
+  float: right;
+}
+
+.label-gap {
+  margin-top: 20px;
+}
+.hidden {
+  display: none;
+}
+
+input, textarea {
+  box-sizing: border-box;
+  border: 2px solid #9D85DC;
+  border-radius: 5px;
+  padding: 5px;
+  resize: vertical;
+}
+
+#submit {
+  margin-top: 5px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #9D85DC;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  transition: background-color 0.25s;
+}
+
+#submit:hover {
+  background-color: #5222D0;
+}
+
+#form {
+  /* margin-bottom: 20rem; */
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+
+footer {
+  border-top: 1px solid #fff;
+  background-color: #E9D8D7;
+}
+
+.footer-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.footer-wrap a {
+  padding-top: 1rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.copyright {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+footer p i {
+  padding-right: .25rem;
+  vertical-align: middle;
+  color: #000;
+}
+
+@media (max-width: 650px) {
+  .footer-wrap {
+    flex-direction: column;
+  }
+  label {
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .flex {
+    max-width: 100%;
+  }
+  .left, .right, #submit {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 750px) {
+  .big-section {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+  }
+  .big-section-wrap {
+    padding: .5rem .5rem 1.5rem;
+  }
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the nav-bar (.icon) */
+@media screen and (max-width: 900px) {
+.nav-bar a:not(:first-child) {display: none;}
+.nav-bar a.icon {
+  float: right;
+  display: block;
+}
+}
+
+/* The "responsive" class is added to the nav-bar with JavaScript when the user clicks on the icon. This class makes the nav-bar look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 900px) {
+  .nav-bar.responsive {
+    position: fixed;
+  }
+  .nav-bar.responsive a.icon {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  }
+  .nav-bar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
